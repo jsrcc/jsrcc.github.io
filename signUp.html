@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCC * SignUp</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="icon" type="image/png" href="images/JCC.png">
+
+    <script type="module" src="js/signup.js"></script>
+</head>
+<body>
+    <section>
+        <div class="tit">
+            <h1>Coding Club JSR!</h1>
+        </div>
+        <div class="container">
+            <form>
+                <h2>SignUp</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" id="usrName" required>
+                    <label>User Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" id="fname" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">SUBMIT</button>
+                <div class="register-link">
+                    <p>Already Have an account? <a href="login.html">Click Here</a></p>
+                    <h3 id="accinfo" style="display: none;">Your Account has been created! Please Login</h3>
+                </div>
+                <div class="error">
+                    <p id="error"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

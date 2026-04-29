@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCC * Profile</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+
+    <script type="module" src="js/profstup.js"></script>
+</head>
+<body>
+    <section>
+        <div class="tit">
+            <h1>Coding Club JSR!</h1>
+        </div>
+        <div class="container">
+        <form>
+            <h2>Setup Profile</h2>
+            
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                <input type="text" id="usrName" required>
+                <label>User Name</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+                <input type="text" id="realName" required>
+                <label>Real Name</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                <input type="number" id="age" min="12" max="25" required>
+                <label>Age</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+                <input type="text" id="gender" required>
+                <label>Gender</label>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+            
+            <div class="error">
+                <p id="error"></p>
+            </div>
+        </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

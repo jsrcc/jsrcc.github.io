@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CC Jamshedpur</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="icon" type="image/png" href="images/JCC.png">
+
+    <script type="module" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CC Jamshedpur</div>
+        <div class="nav-links">
+            <a href="#profile">Profile</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Session Active</div>
+        <h1>Welcome Back, <br><span class="highlight">Member #001</span></h1>
+        <p>Your dashboard for the local coding collective. Ready to push some code today?</p>
+    </header>
+
+    <section id="profile">
+        <h2 class="section-title">Member Credentials</h2>
+        <div class="id-card">
+            <div class="qr-wrapper">
+                <div id="qrcode-container"></div>
+                <div class="corner-accents"></div>
+            </div>
+            <div class="id-details">
+                <span class="id-label">Assigned Identity</span>
+                <h2 class="name-id">Loading...</h2>
+                <h2 class="email-id">Loading...</h2>
+                <div class="id-meta">
+                    <p>Status: <span class="highlight">Verified Member</span></p>
+                    <p>Origin: CC Jamshedpur Node</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Club Schedule</h2>
+        <div class="grid">
+            <div class="card">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Club Status</h2>
+        <div class="card">
+            <p><strong>Version:</strong> 1.0.4-stable</p>
+            <p>Made by SrySine</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Coding Club of Jamshedpur</p>
+        <p class="status-text">Node Status: Online</p>
+    </footer>
+
+</body>
+</html>
