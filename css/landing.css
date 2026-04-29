@@ -1,0 +1,172 @@
+:root {
+    --primary: #00ffaa; /* Fresh mint green for a 'new' feel */
+    --bg-dark: #0a0a0a;
+    --text-light: #ededed;
+    --card-bg: #111111;
+    --accent: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Monospace for that 'raw' coding feel */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 5px 10px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+/* Hero */
+.hero {
+    padding: 8rem 5% 5rem 5%;
+    text-align: center;
+}
+
+.badge {
+    background: var(--accent);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    color: #888;
+}
+
+/* Buttons */
+.btn {
+    background: var(--primary);
+    color: black;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-jn {
+    border: 1px solid var(--accent);
+    color: black;
+    background-color: var(--primary);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.btn-jn:hover {
+    transform: scale(0.8);
+    filter: drop-shadow(2px 2px 30px black);
+}
+
+.btn-alt {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Vision Cards */
+section {
+    padding: 5rem 5%;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border: 1px solid var(--accent);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+}
+
+.cta-card {
+    background: var(--primary);
+    color: black;
+    padding: 4rem 2rem;
+}
+
+.cta-card p {
+    margin: 1rem 0 2rem 0;
+}
+
+/* Footer */
+footer {
+    padding: 3rem;
+    text-align: center;
+    border-top: 1px solid var(--accent);
+}
+
+.status-text {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    nav { flex-direction: column; gap: 20px; }
+}
